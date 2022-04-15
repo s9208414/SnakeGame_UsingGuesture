@@ -55,8 +55,9 @@ class ImageAnalyze(context: Context) : ImageAnalysis.Analyzer {
             var max=getMax(outputFeature0.floatArray)
             var sv = ShareVar()
             sv.setLabel(max)
+            Log.e("maxIdx",max.toString())
             val inferredCategory = townList[max]
-            listener.getAnalyzeResult(inferredCategory, 0.0.toFloat())  // Viewを更新
+            listener.getAnalyzeResult(inferredCategory, 0.0.toFloat())
         }
 
     }

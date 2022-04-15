@@ -174,21 +174,21 @@ class MainActivity : AppCompatActivity(), LifecycleOwner {
     fun move(result: String) {
 
         when(result){
-            "up" -> {
+            "top" -> {
                 snake.direction = SnakeGameView.DIRECTION.DIRECTION_UP
-                viewFinder.bringToFront()
+                //viewFinder.bringToFront()
             }
             "down" -> {
                 snake.direction = SnakeGameView.DIRECTION.DIRECTION_DOWN
-                viewFinder.bringToFront()
+                //viewFinder.bringToFront()
             }
             "left" -> {
                 snake.direction = SnakeGameView.DIRECTION.DIRECTION_LEFT
-                viewFinder.bringToFront()
+                //viewFinder.bringToFront()
             }
             "right" -> {
                 snake.direction = SnakeGameView.DIRECTION.DIRECTION_RIGHT
-                viewFinder.bringToFront()
+                //viewFinder.bringToFront()
             }
         }
     }
